@@ -21,7 +21,7 @@ public class PointAt : MonoBehaviour
 		Vector2 targetV = (target.position - transform.position).normalized;
 		//if the maxAngle variable is 0, then set the object's transform.up vector to be the target vector, and return
 		//this causes the object to instantly rotate to point at the target, and exits the function early
-		if(maxAngle == 0)
+		if (maxAngle == 0)
 		{
 			transform.up = targetV;
 			return;
